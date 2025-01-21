@@ -87,7 +87,7 @@ const App = () => {
             let myFilteredData = originalData.filter((item) => {
                 return (
                     item.Name.toLowerCase().includes(text.toLowerCase()) ||
-                    item.Year.toString().includes(text) || // No need for lowercase on numbers
+                    item.Year.toString().includes(text) ||
                     item.Location.toLowerCase().includes(text.toLowerCase())
 
                 );
